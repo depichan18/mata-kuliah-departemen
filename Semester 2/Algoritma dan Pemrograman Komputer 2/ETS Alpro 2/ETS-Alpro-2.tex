@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Devi Rosa Aprilla}
+\lhead{Assignment}
+\cfoot{\thepage}
+
+\begin{document}
+
+\begin{center}
+    \text{Evaluasi Tengah Semester 2025} \\
+    \textit{Algoritma dan Pemrograman Komputer 2} \\
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{enumerate}
+    \item \textbf{(Kebenaran Algoritma)} \\
+    Buktikan kebenaran dari pernyataan berikut:
+    \[
+        2^n \leq 2^{n+1} - 2^{n-1} - 1, \quad \text{untuk setiap } n \in \mathbb{N}
+    \]
+    dengan menggunakan induksi matematika.
+
+    \item \textbf{(Analisis Kompleksitas)} \\
+    Anda diberi array yang tidak diurutkan berisi $n$ bilangan bulat. Tugas Anda adalah menentukan apakah terdapat triplet $(a, b, c)$ sedemikian hingga:
+    \begin{itemize}
+        \item $a + b + c = k$, untuk bilangan bulat $k$ yang diberikan.
+        \item Ketiga elemen tersebut berbeda (yaitu, nilai yang berbeda, bukan hanya indeks).
+        \item Setiap triplet yang valid harus unik, yaitu, permutasi dari angka yang sama tidak dihitung beberapa kali.
+    \end{itemize}
+    \begin{tcolorbox}[title=Contoh]
+    Bil $= [\, 1,\, 2,\, -1,\, -2,\, 0,\, 3,\, -1] \rightarrow n = 7$ \\
+    $k = 0$ \\
+    Output: \\
+    $[\, -2,\, -1,\, 3]$ karena $-2 + (-1) + 3 = 0$, \\
+    $[\, -2,\, 0,\, 2]$, $[\,-1,\, -1,\, 2]$, $[\,-1,\, 0,\, 1]$ \\
+    \textit{Hint:} left $= i+1$ dan right $= n-1$ dimana $i$ adalah iterasi dari 0 sampai $n-3$.
+    \end{tcolorbox}
+
+    \item \textbf{(Searching)} \\
+    Buatlah \textit{pseudo code} Java untuk \textbf{mencari angka dalam array yang paling mendekati} angka target yang dimasukkan oleh pengguna.
+
+    \textbf{Ketentuan:}
+    \begin{enumerate}
+        \item Program menerima input berupa array bilangan bulat.
+        \item Pengguna memasukkan satu angka target.
+        \item Program mencari angka dalam array yang paling dekat nilainya dengan target.
+        \item Tampilkan angka tersebut dan selisihnya dari target.
+    \end{enumerate}
+
+        \item \textbf{(Sorting)} \\
+    \begin{tcolorbox}[title=Program Java - Sorting]
+    \begin{verbatim}
+    package ETS;
+
+    public class soal_sorting {
+        public static void main(String[] args) {
+            int[] nilai = {45, 20, 35, 10, 50, 25};
+            ETSSort(nilai);
+            for (int i = 0; i < nilai.length; i++) {
+                System.out.print(nilai[i] + " ");
+            }
+        }
+
+        public static void ETSSort(int[] arr) {
+            for (int i = 1; i < arr.length; i++) {
+                int key = arr[i];
+                int j = i - 1;
+                while (j >= 0 && arr[j] > key) {
+                    arr[j + 1] = arr[j];
+                    j--;
+                }
+                arr[j + 1] = key;
+            }
+        }
+    }
+    \end{verbatim}
+    \end{tcolorbox}
+
+    \textbf{Pertanyaan:}
+    \begin{enumerate}
+        \item[a)] Tunjukkan perubahan array \textbf{setelah setiap iterasi luar (loop $i$)} dalam fungsi ETSSort.
+        \item[b)] Berapa urutan akhir array yang akan dicetak program?
+    \end{enumerate}
+
+    \item \textbf{(Exception Handling)} \\
+    \begin{tcolorbox}[title=Program Java - Exception Handling]
+    \begin{verbatim}
+    public class ExceptionTest {
+        public static void main(String[] args) {
+            try {
+                int[] numbers = {10, 20, 30};
+                System.out.println("Nilai pertama: " + numbers[0]);
+                int result = numbers[1] / 0; // baris A
+                System.out.println("Hasil: " + result);
+            } catch (ArithmeticException e) {
+                System.out.println("Terjadi kesalahan aritmatika: "
+                + e.getMessage());
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Akses indeks array yang tidak
+                valid.");
+            } finally {
+                System.out.println("Blok finally dijalankan.");
+            }
+            System.out.println("Program selesai.");
+        }
+    }
+    \end{verbatim}
+    \end{tcolorbox}
+
+    \textbf{Pertanyaan:}
+    \begin{enumerate}
+        \item[a)] Apa yang akan ditampilkan oleh program di atas ketika dijalankan? Jelaskan urutan eksekusi program secara singkat.
+        \item[b)] Jika baris \texttt{int result = numbers[1] / 0;} (baris A) diganti menjadi \texttt{int result = numbers[5] / 2;}, output program akan berubah. Jelaskan output yang dihasilkan dan exception mana yang akan ditangkap.
+        \item[c)] Apakah blok finally \textbf{selalu} dijalankan? Jelaskan dengan memberikan satu contoh situasi di mana blok finally \textbf{tidak} dijalankan.
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
