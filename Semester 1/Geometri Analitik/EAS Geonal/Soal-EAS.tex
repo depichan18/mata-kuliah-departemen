@@ -1,0 +1,88 @@
+% Format sesuai permintaan
+\documentclass[10pt,a4paper]{article}
+\usepackage{graphicx} 
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{geometry}
+    \geometry{
+        left = 25mm,
+        right = 35mm,
+        top = 30mm,
+        bottom = 30mm
+    }
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+\graphicspath{{../../../Insert/}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\jawab}{\textbf{Solusi}:}
+
+\newtheorem*{teorema}{Teorema}
+\newtheorem*{definisi}{Definisi}
+
+\begin{document}
+% Footer
+\fancyfoot[C]{\raisebox{.5ex}{\rule{0.5cm}{.4pt}}o0o\raisebox{.5ex}{\rule{0.5cm}{.4pt}}}
+
+% Header Tabel
+\begin{tabular}{@{}r@{}c@{}l@{}}
+    \raisebox{0.5cm}{\includegraphics[width=2cm]{ITS.png}}
+     &\begin{tabular}{lcll}
+        \multicolumn{4}{c}{\hspace*{-1cm}\begin{tabular}{c}
+          \MakeUppercase{evaluasi akhir semester gasal 2024/2025}\\
+          \MakeUppercase{departemen matematika fsad its}\\
+          \MakeUppercase{program studi sarjana}\\
+     \end{tabular}}\\
+     \\
+          Matakuliah&:&\multicolumn{2}{l}{Geometri Analitik}\\
+          Hari, Tanggal&:&\multicolumn{2}{l}{Selasa, 10 Desember 2024}\\
+          Waktu / Sifat&:&\multicolumn{2}{l}{11.00-12.40 / \textit{Closed Book}}\\
+          Kelas, Dosen&:&A.& M. Syifa’ul Mufid, D.Phil. \& I Gst Ngr Rai Usadha, M.Si\\
+          &&B.& Drs. Isis Herisma, M.Sc.\\
+          &&C.& Drs. Komar Baihaqi, M.Si.\\
+          &&D.& Dr.mont. Kistosoji Fahim \& Wahyu Fistia D., M.Si.\\
+     \end{tabular}
+     & 
+     \hspace{-1cm}\raisebox{0.5cm}{\includegraphics[width=2cm]{M.png}}
+     \\ \hline
+\multicolumn{3}{|p{16cm}|}{\MakeUppercase{harap diperhatikan!!!}}\\
+\multicolumn{3}{|p{16cm}|}{Segala jenis pelanggaran (mencontek, kerjasama, dsb) yang dilakukan saat ETS}\\
+\multicolumn{3}{|p{16cm}|}{akan dikenakan sanksi pembatalan mata kuliah pada semester yang sedang berjalan.}\\
+\hline
+\end{tabular}
+
+% Spasi sebelum soal
+\vspace{1em}
+
+% Soal
+
+\begin{enumerate}
+    \item Tentukan persamaan garis singgung hiperbola $\dfrac{x^2}{64} - \dfrac{y^2}{36} = 1$ yang tegak lurus dengan garis $x - 2y + 3 = 0$.
+    \item Dapatkan nilai eksentrisitas, koordinat titik fokus, dan persamaan direktris dari irisan kerucut yang diberikan dengan persamaan: $7x^2 + 13y^2 + 6\sqrt{3}xy = 64$. Kemudian sketsa kurvanya.
+    \item Diberikan persamaan kutub $r = 6$ dan $r = 4 + 4\cos(\theta)$.
+    \begin{enumerate}[label=(\alph*)]
+        \item Sketsa persamaan tersebut dalam satu bidang koordinat kutub.
+        \item Tentukan titik potong kedua persamaan tersebut.
+    \end{enumerate}
+    \item Temukan bentuk umum persamaan bidang yang melalui titik $(2,1,1)$, $(0,4,1)$, dan $(-2,1,4)$.
+    \item Sketsa trace $xy$, trace $yz$, dan trace $zx$ dari permukaan $x^2 - 4y^2 + z^2 = 36$.
+\end{enumerate}
+
+% Penutup
+\vspace{2em}
+\begin{center}
+    \textbf{***** Selamat mengerjakan semoga sukses *****}\\[0.5em]
+    \textit{Kejujuran adalah modal utama suatu keberhasilan}
+\end{center}
+
+\end{document}
