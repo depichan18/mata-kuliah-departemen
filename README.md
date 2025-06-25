@@ -1,47 +1,38 @@
-# mata-kuliah-departemen
+# Mata Kuliah Departemen
 
-Repositori ini berisi kumpulan soal evaluasi mata kuliah di departemen beserta pembahasannya untuk setiap semester.
+Repositori ini berisi kumpulan soal evaluasi dan pembahasan untuk mata kuliah di departemen, terorganisir per semester.
 
-## Daftar Isi
+## Cara Akses
 
-- Soal-soal evaluasi setiap mata kuliah, terorganisir berdasarkan semester
-- Pembahasan atau kunci jawaban dari setiap soal dalam bentuk file PDF
-- Panduan penggunaan dan kontribusi
-
-## Cara Mengakses Repositori
-
-1. **Buka halaman repositori**  
-   [https://github.com/depichan18/mata-kuliah-departemen](https://github.com/depichan18/mata-kuliah-departemen)
-
-2. **Clone repositori ke komputer Anda:**
-   ```bash
-   git clone https://github.com/depichan18/mata-kuliah-departemen.git
-   ```
-
-3. **Akses direktori hasil clone:**
-   ```bash
-   cd mata-kuliah-departemen
-   ```
-
-4. **Buka folder sesuai semester/mata kuliah yang diinginkan.**
-
-5. **Pembahasan soal dapat dilihat dengan membuka file berformat `.pdf` yang tersedia di masing-masing folder.**
+1. Buka alamat: [https://github.com/depichan18/mata-kuliah-departemen](https://github.com/depichan18/mata-kuliah-departemen)
+2. Pilih folder semester (misal: Semester 1).
+3. Pilih nama mata kuliah yang diinginkan, contohnya:
+   - Algoritma dan Pemrograman Komputer 1
+   - Geometri Analitik
+   - Logika Matematika
+   - Metode Statistika
+4. Di dalam folder mata kuliah, buka file soal atau pembahasan (format pdf atau md).
 
 ## Struktur Folder
 
-- `semester-1/`
-- `semester-2/`
-- `...`
-- Setiap folder semester berisi soal dan pembahasan (file PDF) untuk mata kuliah di semester tersebut.
+```
+mata-kuliah-departemen/
+├── Semester 1/
+│   ├── Algoritma dan Pemrograman Komputer 1/
+│   ├── Geometri Analitik/
+│   ├── Logika Matematika/
+│   └── Metode Statistika/
+├── Semester 2/
+│   └── ...
+└── ...
+```
 
-## Kontribusi
+## Tips
 
-Silakan buat pull request jika ingin menambahkan soal atau pembahasan baru. Pastikan file ditempatkan pada semester dan mata kuliah yang sesuai.
+- Tidak perlu login untuk melihat atau mengunduh file.
+- Gunakan fitur pencarian GitHub (tombol "Go to file" atau tekan `t`).
+- Jika ingin menambah soal/pembahasan, fork repo ini dan ajukan pull request.
 
-## Lisensi
+## Kontak
 
-Repositori ini hanya untuk keperluan pembelajaran dan berbagi pengetahuan di lingkungan departemen.
-
----
-
-Jika ada pertanyaan atau saran, silakan hubungi [depichan18](https://github.com/depichan18).
+Hubungi [depichan18](https://github.com/depichan18) jika ada pertanyaan.
